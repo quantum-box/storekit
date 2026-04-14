@@ -1,0 +1,50 @@
+{
+  "name": "@quantum-box/storekit",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Type-safe TypeScript SDK for bakuure commerce API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantum-box/storekit.git"
+  },
+  "keywords": [
+    "storekit",
+    "ecommerce",
+    "bakuure",
+    "graphql",
+    "sdk",
+    "typescript"
+  ],
+  "author": "quantum-box",
+  "bugs": {
+    "url": "https://github.com/quantum-box/storekit/issues"
+  },
+  "homepage": "https://github.com/quantum-box/storekit#readme"
+}
